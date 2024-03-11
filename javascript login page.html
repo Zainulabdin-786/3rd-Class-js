@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript login page</title>
+    <style>
+        #heading{
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading"></h1>
+</body>
+</html>
+
+<script>
+    var user_name = prompt("Enter User name");
+    var pass = prompt("Enter Password");
+
+    if(user_name=="Zainulabdin" && pass=="1234567"){
+        document.getElementById("heading").innerHTML="Login Success";
+    }
+
+    else if(user_name=="User" && pass=="123"){
+        document.getElementById("heading").innerHTML="Hi User";
+    }
+
+    else{
+        document.getElementById("heading").innerHTML="Login Failed";
+    }
+</script>
